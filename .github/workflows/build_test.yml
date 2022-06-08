@@ -2,9 +2,11 @@ name: Build_Test
 on: [push]
 jobs:
   build_main:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - run: apt-get install gcc
       
       - run: ls -a
       
