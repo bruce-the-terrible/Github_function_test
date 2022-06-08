@@ -17,8 +17,3 @@ jobs:
       - run: ls -a
       
       - run: ./main
-      
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: "main"
-          token: ${{ secrets.GITHUB_TOKEN }}
