@@ -14,6 +14,8 @@ jobs:
       
       - run: gcc src/main.c -o main
       
+      - run: ls -a
+      
       - uses: actions/upload-artifact@v3
         with:
           path: main
