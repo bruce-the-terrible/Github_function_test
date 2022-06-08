@@ -4,9 +4,10 @@ jobs:
   build_main:
     runs-on: macOS-latest
     steps:
-      uses: actions/checkout@v3
-      -run: gcc src/main.c -o main
-      uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: main
+      -uses: actions/checkout@v3
       
+      -run: gcc src/main.c -o main 
+      
+      -uses: actions/upload-sarif@v3
+        with:
+          path: main
