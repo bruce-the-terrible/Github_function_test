@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
+      - run: ls -a
+      
       - run: gcc src/main.c -o main
       
       - uses: actions/upload-artifact@v3
