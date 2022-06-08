@@ -4,10 +4,10 @@ jobs:
   build_main:
     runs-on: macOS-latest
     steps:
-      -uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       
-      -run: gcc src/main.c -o main 
+      - run: gcc src/main.c -o main
       
-      -uses: actions/upload-sarif@v3
+      - uses: actions/upload-artifact@v3
         with:
           path: main
