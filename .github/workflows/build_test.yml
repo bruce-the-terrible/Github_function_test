@@ -10,6 +10,8 @@ jobs:
       
       - run: ls -a
       
+      - run: gcc -v
+      
       - run: gcc src/main.c -o main
       
       - uses: actions/upload-artifact@v3
