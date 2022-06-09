@@ -1,0 +1,26 @@
+name: Build_Test
+on: [push]
+jobs:
+  build_main:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@
+      
+      - run: ls -a
+      
+      - run: gcc -v
+      
+      - run: gcc src/main.c -o main
+      
+      - run: ls -a
+      
+      - run: ./main
+      
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Development Build"
+          files: |
+            main
