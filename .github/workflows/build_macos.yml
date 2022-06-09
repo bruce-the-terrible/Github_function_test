@@ -1,10 +1,10 @@
-name: Build_Test
+name: Build_macOS
 on: [push]
 jobs:
-  build_main:
+  build_route:
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@
+      - uses: actions/checkout@master
       
       - run: ls -a
       
