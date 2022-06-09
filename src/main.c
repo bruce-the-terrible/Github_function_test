@@ -7,7 +7,7 @@
 */
 #if 0
 #define BASE	240	// 第一档电阻值
-#define R_BASE	1	// 取样电阻阻值。1-R100  2-R200
+#define RBASE	2	// 取样电阻阻值。1-R100  2-R200
 int main(int argc,char* argv[])
 {
 	int i;
