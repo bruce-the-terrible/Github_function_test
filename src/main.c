@@ -26,7 +26,7 @@ int main(int argc,char* argv[])
 
 #else
 
-#define BASE	(150)		//第一档电阻值
+#define BASE	(240)		//第一档电阻值
 #define	R_FEED	(0.2)		//取样电阻 0.2 -- R200  0.1 -- R100
 
 #define R_START	(51)		//51KOhm
